@@ -103,10 +103,12 @@ public class Transactions extends JFrame implements ActionListener {
 			new FastCash(pin);
 		}
 		if(ae.getSource() == miniStatementButton) {
-			System.exit(0);
+			setVisible(false);
+			new MiniStatement(pin);
 		}
 		if(ae.getSource() == pinChangeButton) {
-			System.exit(0);
+			setVisible(false);
+			new PinChange(pin);
 		}
 		if(ae.getSource() == balanceEnquiryButton) {
 			System.exit(0);
