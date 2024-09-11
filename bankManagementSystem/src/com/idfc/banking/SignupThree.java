@@ -232,7 +232,7 @@ public class SignupThree extends JFrame implements ActionListener {
 		
 					c.s.executeUpdate(query1);
 					c.s.executeUpdate(query2);
-					JOptionPane.showMessageDialog(null,"Card Numner:" + cardNumber +"/nPIN:" + pin);
+					JOptionPane.showMessageDialog(null,"Card Numner:" + cardNumber +"\nPIN:" + pin);
 					setVisible(false);
 					
 				}
