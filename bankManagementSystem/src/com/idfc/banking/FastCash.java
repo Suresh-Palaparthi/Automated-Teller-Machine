@@ -113,8 +113,9 @@ public class FastCash extends JFrame implements ActionListener {
 			else {
 				String query = "insert into bank values('"+pin+"','"+date+"','Fast Withdrawl','"+amountWithdrawn+"')";
 				c.s.executeUpdate(query);
-//				setVisible(false);
 				JOptionPane.showMessageDialog(null,"Rs. "+amountWithdrawn+" has been withdrawn");
+				setVisible(false);
+				new Login();
 				
 			}
 			

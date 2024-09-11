@@ -68,7 +68,7 @@ public class PinChange extends JFrame implements ActionListener {
 		backButton.addActionListener(this);
 		bgimage.add(backButton);
 		
-		setTitle("Transactions");
+		setTitle("Change Pin");
 		setSize(900,820);
 		setLayout(null);
 //		setUndecorated(true);
@@ -101,7 +101,8 @@ public class PinChange extends JFrame implements ActionListener {
 					
 					JOptionPane.showMessageDialog(null, "PIN Change successful");
 					setVisible(false);
-					new Transactions(nPin);
+//					new Transactions(nPin);
+					new Login();
 				}catch(Exception e){
 					System.out.println(e);
 				}

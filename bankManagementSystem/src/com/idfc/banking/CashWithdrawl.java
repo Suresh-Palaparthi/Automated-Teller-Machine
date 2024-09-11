@@ -90,7 +90,7 @@ public class CashWithdrawl extends JFrame implements ActionListener {
 						c.s.executeUpdate(query);
 						JOptionPane.showMessageDialog(null, "Rs. " +amountWithdrawn+" has been withdrawn");
 						setVisible(false);
-						new Transactions(pin);
+						new Login();
 						
 					}catch(Exception e){
 						System.out.println(e);

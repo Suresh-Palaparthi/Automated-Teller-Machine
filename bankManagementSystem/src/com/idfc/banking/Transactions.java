@@ -111,10 +111,13 @@ public class Transactions extends JFrame implements ActionListener {
 			new PinChange(pin);
 		}
 		if(ae.getSource() == balanceEnquiryButton) {
-			System.exit(0);
+			setVisible(false);
+			new BalanceEnquiry(pin);
 		}
 		if(ae.getSource() == exitButton) {
-			System.exit(0);
+//			System.exit(0); Removing this to match actual ATM functionality
+			setVisible(false);
+			new Login();
 		}
 		
 	}

@@ -70,6 +70,8 @@ public class Deposit extends JFrame implements ActionListener {
 					String query = "insert into bank values('"+pin+"','"+date+"','Deposit','"+amountDeposited+"')";
 					c.s.executeUpdate(query);
 					JOptionPane.showMessageDialog(null,"Rs."+amountDeposited+" has been deposited to your account");
+					setVisible(false);
+					new Login();
 				}catch(Exception e) {
 					System.out.println(e);
 				}
